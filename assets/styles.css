@@ -1,0 +1,134 @@
+/* GENERAL PAGE SETTINGS */
+body {
+    font-family: "Poppins", sans-serif;
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-container {
+    max-width: 900px;
+    padding: 20px;
+}
+
+/* HEADINGS */
+.small-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #6c6c6c;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.big-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1e4fa5;
+    margin-bottom: 15px;
+}
+
+/* INSTRUCTIONS */
+.list-text {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* GRID STYLES */
+.grid-container {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.grid-text {
+    font-size: 16px;
+    padding: 10px 6px;
+}
+
+.grid-cell-odd {
+    background: #ffffff;
+    border-right: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.grid-cell-even {
+    background: #f2f6ff;
+    border-right: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+/* Remove right border for last column cells */
+.grid-container .col-lg-2:nth-child(6n) {
+    border-right: none !important;
+}
+
+/* INPUT FIELDS */
+.custom-input {
+    border: 1px solid #bfbfbf;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 15px;
+}
+
+.table-heading {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e4fa5;
+
+}
+.table-heading1 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e4fa5;
+    text-align: right;
+}
+
+/* BUTTON */
+.custom-button {
+    background: #1e4fa5;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    background: #163a7c;
+}
+
+/* SPACING FIXES */
+.row {
+    margin-bottom: 10px;
+}
+
+.grid-container .col-6,
+.grid-container .col-md-3,
+.grid-container .col-lg-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 45px;
+}
+
+/* MOBILE FIXES */
+@media (max-width: 768px) {
+    .grid-text {
+        font-size: 14px;
+    }
+
+    .big-title {
+        font-size: 26px;
+    }
+
+    .list-text {
+        font-size: 15px;
+    }
+}
